@@ -1,0 +1,2 @@
+email=lydianumwali@gmail.com
+password=lydia2023
