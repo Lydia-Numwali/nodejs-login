@@ -84,10 +84,10 @@ const server = http.createServer((req, res) => {
         if (postData.email === email && postData.password === password) {
           res.writeHead(200, { 'Content-Type': 'text/html' });
           res.end('<h1>user logged in successfully</h1>');
-        }// else {
-        //   res.writeHead(401, { 'Content-Type': 'text/html' });
-        //   res.end('<h1>Error: Invalid credentials</h1>');
-        // }
+        } else {
+          res.writeHead(401, { 'Content-Type': 'text/html' });
+          res.end('<h1>Error: Invalid credentials</h1>');
+        }
       });
     });
   }
